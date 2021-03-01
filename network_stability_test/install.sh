@@ -22,7 +22,7 @@ sudo cp ${PWD}/agent-temi /usr/bin
 
 #Move systemd files to /etc/systemd/system
 sudo rm -rf ${PROJECT_PATH}/service/*
-sudo cp -rf ${PWD}/service/shaoXing* ${PROJECT_PATH}/service
+sudo cp -rf ${PWD}/service/* ${PROJECT_PATH}/service
 
 # sudo cp -rf ${PROJECT_PATH}/service/* /etc/systemd/system
 
