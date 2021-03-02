@@ -16,5 +16,17 @@ host部署在本地服务器上面，通过MQTT发送指定消息到slave端。s
 ```
 ### 部署方法:
 ```
+被测机:
+    sudo ./install.sh
+    systemctl start network_stability_test-slave.service
+    systemctl enable network_stability_test-slave.service
+公网服务器 or 测试机:
+    sudo ./install.sh
+    systemctl start network_stability_test-host.service
+    systemctl enable network_stability_test-host.service
+```
 
+### 查看日志
+```
+sudo journalctl -u *.service
 ```
