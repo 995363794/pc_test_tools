@@ -1,0 +1,8 @@
+{
+    "netwoek_stability_test-modbusSetting": {
+        "port": "/dev/ttyUSB0",
+        "option": {
+            "baudRate": 9600
+        }
+    }
+}
