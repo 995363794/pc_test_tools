@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT_PATH="/opt/test/pc_test_tools"
+PROJECT_PATH="/opt/test/pc_test_tools/network_stability_test"
 
 
 # Create project directory
@@ -17,14 +17,14 @@ pushd ${PROJECT_PATH}
 sudo npm install
 popd
 
-# Copy terminal to /usr/bin
-sudo cp ${PWD}/agent-temi /usr/bin
+# # Copy terminal to /usr/bin
+# sudo cp ${PWD}/agent-temi /usr/bin
 
 #Move systemd files to /etc/systemd/system
 sudo rm -rf ${PROJECT_PATH}/service/*
 sudo cp -rf ${PWD}/service/* ${PROJECT_PATH}/service
 
-# sudo cp -rf ${PROJECT_PATH}/service/* /etc/systemd/system
+sudo cp -rf ${PROJECT_PATH}/service/* /etc/systemd/system
 
 # #Enable systemd services
 # echo 'Enable service'

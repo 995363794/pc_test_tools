@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT_PATH="/opt/test/pc_test_tools"
+PROJECT_PATH="/opt/test/pc_test_tools/network_stability_test"
 
 #Enable systemd services
 echo 'Disable service'
